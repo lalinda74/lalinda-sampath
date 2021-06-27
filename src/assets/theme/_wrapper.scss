@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-wrapper {
+    padding: 0;
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.wrapper {
+    padding: 24px 15rem;
+    &--fh {
+        height: 100vh;
+        // scroll-snap-align: start;
+    }
+    &--plain {
+        background: #FFF;
+    }
+    &--pale {
+        background: #faf7ed;
+    }
+    &--short {
+        height: 70vh;
+    }
+
+    &--bg-image {
+        height: 70vh;
+        width: 116%;
+        margin: 0 -4rem;
+    }
+}
+
+@media (min-width: 1048px) and (max-width: 1310px) {
+    .wrapper {
+        padding: 24px 8rem;
+    }
+}
+
+@media (min-width: 979px) and (max-width: 1048px) {
+    .wrapper {
+        padding: 24px 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .wrapper {
+        padding: 24px 4rem;
+    }
+}
+
+.p-parallax-img {
+    /* The image used */
+    background-image: url("../images/bg.jpg");
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    margin-top: -120px;
+    background: #fff;
+    padding: 64px 64px 40px;
+    position: relative;
+}

@@ -1,0 +1,25 @@
+.article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 0;
+    &__title {
+        font-size: 20px;
+        color: #192735;
+        opacity: 1!important;
+        line-height: 29px;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    &__desc {
+        margin-top: 4px;
+        opacity: .9;
+        font-weight: 400;
+    }
+    &__image {
+        width: 80px;
+        height: 80px;
+    }
+}
