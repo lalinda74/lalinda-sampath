@@ -4,3 +4,36 @@
     width: 160px;
     height: 160px;
 }
+
+.scroll-btn {
+    position: relative;
+}
+.scroll-down {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 34px;
+    height: 55px;
+}
+.mouse {
+    width: 3px;
+    padding: 3px 10px;
+    height: 28px;
+    border: 1.5px solid #d0021b;
+    border-radius: 25px;
+    opacity: .5;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 8px;
+    border-radius: 25%;
+    background-color: #d0021b;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}

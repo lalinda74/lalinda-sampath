@@ -8,7 +8,7 @@ function Projects() {
   return (
     <section className="d-flex align-items-center wrapper wrapper--fh">
       <div>
-        <p className="p-txt-lg">I have 6 years of experience working in <br/>tech companies both in local and international level.</p>
+        <h4>I have 6 years of experience working in <br/>tech companies both in local and international level.</h4>
         <div className="row mt-5">
           <div className="col-4 mt-5">
             <Tile {...commonProps} />
