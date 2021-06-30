@@ -57,13 +57,15 @@
     /* The image used */
     background-image: url("../images/bg.jpg");
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 75vh; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    margin: 0 -40%;
 }
 
 .content {

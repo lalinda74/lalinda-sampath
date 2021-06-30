@@ -8,8 +8,8 @@ function Experience() {
   return (
     <section className="d-flex align-items-center wrapper wrapper--fh">
       <div>
-        <p className="p-txt-lg">I have 6 years of experience working in <br/>tech companies both in local and international level.</p>
-        <div className="row mt-5">
+        <h4>I have 6 years of experience working in tech both in <br/>local and international level.</h4>
+        <div className="row mt-3">
           <div className="col-4 mt-5">
             <Tile {...commonProps} />
           </div>
