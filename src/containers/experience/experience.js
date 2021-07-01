@@ -19,12 +19,6 @@ function Experience() {
           <div className="col-4 mt-5">
             <Tile {...commonProps} />
           </div>
-          <div className="col-4 mt-5">
-            <Tile {...commonProps} />
-          </div>
-          <div className="col-4 mt-5">
-            <Tile {...commonProps} />
-          </div>
         </div>
       </div>
     </section>

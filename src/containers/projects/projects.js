@@ -1,5 +1,5 @@
 import './projects.scss';
-import Tile from '../../components/tile/tile';
+import Poster1 from  '../../assets/images/poster1.png';
 
 function Projects() {
 
@@ -12,7 +12,9 @@ function Projects() {
         <h2 className="mb-3 p-title">Case Studies</h2>
       </div>
       <div className="d-flex">
-        <div className="mx-3 p-banner"></div>
+        <div className="mx-3 p-banner">
+          <img src= {Poster1} alt = "banner 1" />
+        </div>
         <div className="mx-3 p-banner"></div>
         <div className="mx-3 p-banner"></div>
       </div>
