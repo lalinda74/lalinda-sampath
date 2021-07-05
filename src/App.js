@@ -8,7 +8,7 @@ import More from './containers/more/more';
 
 function App() {
   return (
-    <div className="container-fluid no-gutters parent-wrapper">
+    <div className="parent-wrapper">
       <LandingPage />
       <Projects />
       <Experience />

@@ -13,7 +13,23 @@
 }
 
 .wrapper {
-    padding: 24px 15rem;
+    grid-gap: 16px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    &--col-2 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    &--col-2-equal {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    &--slim {
+        max-width: 1024px;
+        margin: auto;
+    }
+    // to remove
     &--fh {
         height: 100vh;
         // scroll-snap-align: start;
@@ -35,23 +51,62 @@
     }
 }
 
-@media (min-width: 1048px) and (max-width: 1310px) {
-    .wrapper {
-        padding: 24px 8rem;
+@media (max-width: 767px) {
+    .wrapper--col-2 {
+        grid-template-columns: 100%;
+        height: 80vh;
     }
 }
 
-@media (min-width: 979px) and (max-width: 1048px) {
+@media (max-width: 1119px) {
     .wrapper {
-        padding: 24px 4rem;
+        padding: 0 32px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-    .wrapper {
-        padding: 24px 4rem;
+
+.text-wrapper {
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+@media (max-width: 1119px) {
+    .text-wrapper {
+        padding: 0 32px;
     }
 }
+
+.slider {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 16px;
+    max-width: 1024px;
+    margin: auto;
+    padding: 0 15px;
+}
+@media (max-width: 1119px) {
+    .slider {
+        padding: 0 32px;
+    }
+}
+
+// @media (min-width: 1048px) and (max-width: 1310px) {
+//     .wrapper {
+//         padding: 24px 8rem;
+//     }
+// }
+
+// @media (min-width: 979px) and (max-width: 1048px) {
+//     .wrapper {
+//         padding: 24px 4rem;
+//     }
+// }
+
+// @media (min-width: 768px) and (max-width: 979px) {
+//     .wrapper {
+//         padding: 24px 4rem;
+//     }
+// }
 
 .p-parallax-img {
     /* The image used */

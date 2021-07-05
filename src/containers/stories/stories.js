@@ -8,7 +8,7 @@ function Stories() {
     return (
         <section className="wrapper">
             <div className="p-parallax-img"></div>
-            <div className="content">
+            <div className="content wrapper--fh wrapper--slim">
                 <h6 className="p-label-emp">I SHARE</h6>
                 <h2 className="mb-3 p-title">Stories and Learnings</h2>
                 <Article />

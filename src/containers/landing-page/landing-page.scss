@@ -1,8 +1,18 @@
 
 
 .profile-image {
-    width: 160px;
-    height: 160px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-image {
+        display: none;
+    }
 }
 
 .scroll-btn {
