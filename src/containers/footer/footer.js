@@ -14,16 +14,16 @@ function Footer() {
         <h5 className="pb-2">diaslalinda@gmail.com</h5>
         <ul className="p-row">
           <li>
-            <a>Dribble</a>
+            <a className="p-link p-link--plain p-link--medium">Dribble</a>
           </li>
           <li>
-            <a>Spotify</a>
+            <a className="p-link p-link--plain p-link--medium">Spotify</a>
           </li>
           <li>
-            <a>Medium</a>
+            <a className="p-link p-link--plain p-link--medium">Medium</a>
           </li>
           <li>
-            <a>LinkedIn</a>
+            <a className="p-link p-link--plain p-link--medium">LinkedIn</a>
           </li>
         </ul>
       </div>

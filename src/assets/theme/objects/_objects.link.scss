@@ -1,11 +1,15 @@
 .p-link {
     position: relative;
     display: inline-block;
+    &--plain {
+        color: unset !important;
+        opacity: 0.66;
+    }
     &--medium {
         color: #00ab6c;
         &:hover {
             cursor: pointer;
-            color: #d0021b;
+            color: #d0021b !important;
             text-decoration: none;
             &::after {
                 opacity: 1;
@@ -20,7 +24,7 @@
         color: #d0021b;
         &:hover {
             cursor: pointer;
-            color: #00ab6c;
+            color: #00ab6c !important;
             text-decoration: none;
             &::after {
                 opacity: 1;
