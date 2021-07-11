@@ -3,9 +3,9 @@ import Image from '../../assets/images/profile-image.jpeg';
 
 function Article(props) {
   return (
-    <section className="article">
+    <a className="article">
         <div>
-          <a className="article__title">Disabled buttons don't have to suck</a>
+          <h5 className="article__title">Disabled buttons don't have to suck</h5>
           <p className="p-txt-md article__desc">Three alternative solutions other than disabling buttons</p>
         </div>
         <aside>
@@ -13,7 +13,7 @@ function Article(props) {
                 <img src = {Image} className="article__image"/>
             </picture>
         </aside>
-    </section>
+    </a>
   );
 }
 

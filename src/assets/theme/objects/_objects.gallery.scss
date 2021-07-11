@@ -1,0 +1,20 @@
+.gallery {
+    height: 500px;
+    display: grid;
+    overflow-y: hidden;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-flow: column;
+    margin: 4em auto auto;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1119px) {
+    .gallery {
+        overflow-x: scroll;
+        grid-template-columns: repeat(4,minmax(350px,1fr));
+    }
+}

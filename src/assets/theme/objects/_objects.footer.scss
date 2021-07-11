@@ -1,0 +1,12 @@
+.p-footer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .p-footer {
+        padding: 24px;
+        grid-template-columns: unset;
+    }
+}

@@ -8,7 +8,7 @@ function Projects() {
   const commonProps = {company: 'Shopify',position: 'UI/UX Engineer', duration: 'July, 2019'};
 
   return (
-    <section className="wrapper--fh" id = "projects">
+    <section id = "projects">
       <div>
         <div className="text-wrapper">
           <h6 className="p-label-emp">some work I have done</h6>

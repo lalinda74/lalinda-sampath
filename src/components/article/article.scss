@@ -3,7 +3,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 24px 0;
+    padding: 12px 0px;
+    cursor: pointer;
+
     &__title {
         font-size: 20px;
         color: #192735;
@@ -14,12 +16,28 @@
         text-decoration: none;
     }
     &__desc {
-        margin-top: 4px;
+        margin-top: 4px !important;
+        margin-bottom: 16px !important;
         opacity: .9;
-        font-weight: 400;
+        font-weight: 400 !important;
+        color: #192735;
     }
     &__image {
         width: 80px;
         height: 80px;
+    }
+
+    &:hover{
+        // background: #fbfef3;
+        border-radius: 12px;
+        * {
+            color: #d0021b;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .article aside {
+        margin-left: 40px;
     }
 }

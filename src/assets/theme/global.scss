@@ -1,4 +1,16 @@
 @import './typography';
 
+// generics
+@import './generics/generics.elements';
+@import './generics/generics.animations';
+
 @import './_wrapper.scss';
 @import './_banner.scss';
+
+// objects
+@import './objects/objects.link';
+@import './objects/objects.gallery';
+@import './objects/objects.footer';
+
+// containers
+@import './experience';

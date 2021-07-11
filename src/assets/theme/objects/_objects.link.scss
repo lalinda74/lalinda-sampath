@@ -1,0 +1,49 @@
+.p-link {
+    position: relative;
+    display: inline-block;
+    &--medium {
+        color: #00ab6c;
+        &:hover {
+            cursor: pointer;
+            color: #d0021b;
+            text-decoration: none;
+            &::after {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+        &::after {
+            background: #ffe4e1;
+        }
+    }
+    &--dribble {
+        color: #d0021b;
+        &:hover {
+            cursor: pointer;
+            color: #00ab6c;
+            text-decoration: none;
+            &::after {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+        &::after {
+            background: #ebfaf5;
+        }
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 20%;
+        height: 8px;
+        opacity: 0;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        bottom: -8px;
+        transform: translateY(50%);
+        transition: all .3s ease;
+        z-index: -2;
+    }
+}

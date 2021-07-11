@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+ul.p-row {
+    display: flex;
+    li {
+        margin-right: 3rem;
+    }
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+a * {
+    text-decoration: none;
+}
