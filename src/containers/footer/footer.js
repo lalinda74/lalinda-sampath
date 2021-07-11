@@ -2,8 +2,6 @@ import './footer.scss';
 
 function Footer() {
 
-  const commonProps = { company: 'Shopify', position: 'UI/UX Engineer', duration: 'July, 2019' };
-
   return (
     <footer className="wrapper wrapper--slim p-footer">
       <div>
@@ -14,16 +12,16 @@ function Footer() {
         <h5 className="pb-2">diaslalinda@gmail.com</h5>
         <ul className="p-row">
           <li>
-            <a className="p-link p-link--plain p-link--medium">Dribble</a>
+            <a className="p-link p-link--plain p-link--medium" href="https://dribbble.com/lalinda" target="_blank">Dribble</a>
           </li>
           <li>
-            <a className="p-link p-link--plain p-link--medium">Spotify</a>
+            <a className="p-link p-link--plain p-link--medium" href="https://twitter.com/laliyaD" target="_blank">Twitter</a>
           </li>
           <li>
-            <a className="p-link p-link--plain p-link--medium">Medium</a>
+            <a className="p-link p-link--plain p-link--medium" href="https://medium.com/@diaslalinda" target="_blank">Medium</a>
           </li>
           <li>
-            <a className="p-link p-link--plain p-link--medium">LinkedIn</a>
+            <a className="p-link p-link--plain p-link--medium" href="https://www.linkedin.com/in/lalindasampath/" target="_blank">LinkedIn</a>
           </li>
         </ul>
       </div>
