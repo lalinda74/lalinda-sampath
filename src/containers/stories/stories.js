@@ -19,7 +19,7 @@ function Stories() {
             </li>
         );
         return (
-            <ul className="blocks">{listItems}</ul>
+            <ul className="blocks p-article-wrapper">{listItems}</ul>
         );
     }
 
