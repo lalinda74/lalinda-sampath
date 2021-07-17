@@ -6,8 +6,6 @@ import Gallery4 from '../../assets/images/gallery4.jpeg';
 
 function More() {
 
-  const commonProps = {company: 'Shopify',position: 'UI/UX Engineer', duration: 'July, 2019'};
-
   return (
     <section className="">
       <div className="wrapper wrapper--slim">
@@ -16,16 +14,16 @@ function More() {
       </div>
       <div className="gallery">
         <picture>
-          <img src = {Gallery1} className="gallery__img" />
+          <img src = {Gallery1} className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery2} className="gallery__img" />
+          <img src = {Gallery2} className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery3} className="gallery__img" />
+          <img src = {Gallery3} className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery4} className="gallery__img" />
+          <img src = {Gallery4} className="gallery__img" alt="banner 1"/>
         </picture>
       </div>
     </section>

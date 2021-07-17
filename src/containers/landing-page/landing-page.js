@@ -6,7 +6,7 @@ function LandingPage() {
     <section className="wrapper wrapper--col-2 wrapper--fh wrapper--slim" id = "landingPage">
       <span>
         <h1 className="mb-3 p-title">Lalinda Sampath Dias</h1>
-        <p className="p-txt-body">Front-End developer, UI/UX Engineer, and team player. I design for impact, give design talks, share learnings on <a className="p-link p-link--medium" href="https://medium.com/@diaslalinda" target="_blank">Medium</a>, and play on <a className="p-link p-link--dribble" href="https://dribbble.com/lalinda" target="_blank">Dribbble</a>. Currently in Sri Lanka.</p>
+        <p className="p-txt-body">Front-End developer, UI/UX Engineer, and team player. I'm passionate about giving back so I share my learnings on <a className="p-link p-link--medium" href="https://medium.com/@diaslalinda" target="_blank" rel="noreferrer">Medium</a>, and play on <a className="p-link p-link--dribble" href="https://dribbble.com/lalinda" target="_blank" rel="noreferrer">Dribbble</a>. Currently in Sri Lanka.</p>
         <a className="scroll-btn" href="#case-study">
           <div className="scroll-down">
             <div className="mouse">

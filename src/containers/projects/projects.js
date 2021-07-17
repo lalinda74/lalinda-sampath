@@ -5,8 +5,6 @@ import Poster3 from  '../../assets/images/poster3.jpeg';
 
 function Projects() {
 
-  const commonProps = {company: 'Shopify',position: 'UI/UX Engineer', duration: 'July, 2019'};
-
   return (
     <section id = "projects">
       <div>
