@@ -28,7 +28,7 @@ function Stories() {
             <div className="p-parallax-img"></div>
             <div className="content wrapper--slim">
                 <div className="content__inner-wrapper">
-                    <h6 className="p-label-emp">I SHARE</h6>
+                    <h6 className="p-subtitle">I SHARE</h6>
                     <h2 className="mb-5 p-title">Stories and Learnings</h2>
                 </div>
                 <ShowArticles list={articlesList} />

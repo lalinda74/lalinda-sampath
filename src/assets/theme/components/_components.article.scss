@@ -1,3 +1,46 @@
 .p-article-wrapper {
     margin-top: 2rem;
 }
+
+.article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px;
+    cursor: pointer;
+
+    &__title {
+        font-size: 20px;
+        color: $priamry-txt-color;
+        opacity: 1!important;
+        line-height: 29px;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    &__desc {
+        margin-top: 4px !important;
+        margin-bottom: 4px !important;
+        opacity: .9;
+        font-weight: 400 !important;
+        color: $priamry-txt-color;
+    }
+    &__image {
+        width: 80px;
+        height: 80px;
+    }
+
+    &:hover{
+        border-radius: 12px;
+        * {
+            color: #d0021b;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .article aside {
+        margin-left: 40px;
+    }
+}

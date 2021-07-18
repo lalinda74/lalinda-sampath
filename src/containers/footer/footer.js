@@ -5,11 +5,11 @@ function Footer() {
   return (
     <footer className="wrapper wrapper--slim p-footer">
       <div>
-        <h6 className="p-label-emp">Don't be a stranger</h6>
+        <h6 className="p-subtitle">Don't be a stranger</h6>
         <h2 className="p-title">Let's Connect</h2>
       </div>
       <div>
-        <h3 className="p-subtitle p-footer__email">diaslalinda@gmail.com</h3>
+        <div className="p-subtitle p-footer__email">diaslalinda@gmail.com</div>
         <ul className="p-row">
           <li>
             <a className="p-link p-link--plain p-link--medium" href="https://dribbble.com/lalinda" target="_blank" rel="noreferrer">Dribble</a>

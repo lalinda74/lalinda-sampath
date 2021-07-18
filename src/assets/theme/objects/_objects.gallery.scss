@@ -1,5 +1,5 @@
 .gallery {
-    height: 500px;
+    height: 270px;
     display: grid;
     overflow-y: hidden;
     grid-template-columns: repeat(4,1fr);
@@ -14,6 +14,7 @@
 
 @media (max-width: 1119px) {
     .gallery {
+        height: 350px;
         overflow-x: scroll;
         grid-template-columns: repeat(4,minmax(350px,1fr));
     }

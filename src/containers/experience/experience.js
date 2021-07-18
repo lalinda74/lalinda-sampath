@@ -23,7 +23,7 @@ function Experience() {
 
   return (
     <section className="wrapper wrapper--col-1 wrapper--slim" id="experience">
-      <h4>I have 6 years of experience working in tech both in <br />local and international level.</h4>
+      <p className="p-txt-lg">I have 6 years of experience working in tech both in <br />local and international level.</p>
       <Test list={list} />
     </section>
   );

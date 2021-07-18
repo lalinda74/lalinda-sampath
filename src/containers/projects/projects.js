@@ -9,7 +9,7 @@ function Projects() {
     <section id = "projects">
       <div>
         <div className="text-wrapper">
-          <h6 className="p-label-emp">some work I have done</h6>
+          <h6 className="p-subtitle">some work I have done</h6>
           <h2 className="mb-3 p-title">Case Studies</h2>
         </div>
         <div className="slider">
