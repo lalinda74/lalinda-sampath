@@ -6,6 +6,7 @@ function Article(props) {
       <div>
         <h5 className="article__title">{props.title}</h5>
         <p className="p-txt-md article__desc">{props.desc}</p>
+        <label className="p-txt-label">Read the whole story</label>
       </div>
       <aside>
         <picture>
