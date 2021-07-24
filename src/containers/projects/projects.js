@@ -14,7 +14,7 @@ function Projects() {
         </div>
         <div className="slider">
           <div className="p-banner">
-            <img src= {Poster1} alt = "banner 1" />
+            <img src= {Poster1} alt = "banner 1" srcSet={`${Poster1} 1x, ${Poster2} 2x`} />
           </div>
           <div className="p-banner">
             <img src= {Poster2} alt = "banner 2" />
