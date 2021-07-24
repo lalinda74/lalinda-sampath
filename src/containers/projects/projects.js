@@ -13,16 +13,16 @@ function Projects() {
           <h6 className="p-subtitle">some work I have done</h6>
           <h2 className="mb-3 p-title">Case Studies</h2>
         </div>
-        <div className="slider">
+        <div className="p-slider">
           <div className="p-banner">
             <img src= {Poster1x} srcSet={`${Poster1x} 1x, ${Poster2x} 2x`} alt = "banner 1" />
           </div>
           <div className="p-banner">
             <img src= {Poster2} srcSet={`${Poster2} 1x, ${Poster2} 2x`} alt = "banner 2" />
           </div>
-          <div className="p-banner">
+          {/* <div className="p-banner">
             <img src= {Poster3} srcSet={`${Poster3} 1x, ${Poster3} 2x`} alt = "banner 3" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
