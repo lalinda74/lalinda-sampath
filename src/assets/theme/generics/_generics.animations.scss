@@ -8,3 +8,11 @@
       transform: none;
     }
 }
+
+.p-slidedown {
+  animation: slide-down 1s forwards;
+}
+
+.p-init-opacity {
+  opacity: 0;
+}

@@ -10,7 +10,7 @@ function Article(props) {
       </div>
       <aside>
         <picture>
-          <img src={props.img} className="article__image" alt={props.title} />
+          <img src={props.img} loading = "lazy" className="article__image" alt={props.title} />
         </picture>
       </aside>
     </a>

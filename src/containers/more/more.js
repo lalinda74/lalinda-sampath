@@ -16,16 +16,16 @@ function More() {
       </div>
       <div className="gallery">
         <picture>
-          <img src = {Gallery1} srcSet={`${Gallery1x} 1x, ${Gallery1} 2x`} className="gallery__img" alt="banner 1"/>
+          <img src = {`${Gallery1}?tr=w-1,h-1:w-400,h-300`} srcSet={`${Gallery1x} 1x, ${Gallery1} 2x`} loading = "lazy" className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery2} className="gallery__img" alt="banner 1"/>
+          <img src = {Gallery2} loading = "lazy" className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery3} className="gallery__img" alt="banner 1"/>
+          <img src = {Gallery3} loading = "lazy" className="gallery__img" alt="banner 1"/>
         </picture>
         <picture>
-          <img src = {Gallery4} className="gallery__img" alt="banner 1"/>
+          <img src = {Gallery4} loading = "lazy" className="gallery__img" alt="banner 1"/>
         </picture>
       </div>
     </section>
