@@ -42,9 +42,9 @@ p.p-txt-lg {
     color: $alt-txt-color;
 }
 p.p-txt-body {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 2.1rem;
+    line-height: 1.7rem;
     opacity: .8;
     margin-bottom: 1rem;
     color: $priamry-txt-color;
@@ -69,14 +69,20 @@ label.p-label-emp {
 }
 
 @media (max-width: 767px) {
-    h2.p-title {
-        font-size: 40px;
+    h1.p-title {
+        font-size: 3rem;
     }
 }
 
-@media (max-width: 599px) {
-    h2.p-title {
-        font-size: 36px;
+@media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    p.p-txt-body {
+        font-size: 1rem;
     }
 }
 
@@ -91,5 +97,22 @@ label.p-label-emp {
     h3.p-subtitle {
         font-size: 20px;
         line-height: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+    div.p-subtitle {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 767px) {
+    p.p-txt-md {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
+@media (max-width: 767px) {
+    label.p-txt-label {
+        font-size: 0.7rem;
     }
 }

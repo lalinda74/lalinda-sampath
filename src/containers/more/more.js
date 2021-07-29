@@ -10,7 +10,7 @@ function More() {
   return (
     <section className="">
       <div className="wrapper wrapper--slim">
-        <h6 className="p-subtitle">BUT WAIT - </h6>
+        <h6>BUT WAIT - </h6>
         <h2 className="mb-3 p-title">There's more</h2>
         <p className="p-txt-md">Other than my passion towards tech and design, I have strong interests in fitness, travel. <br/>Oh, wanna know about my 🦄 story ?</p>
       </div>

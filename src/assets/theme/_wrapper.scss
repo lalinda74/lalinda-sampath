@@ -79,23 +79,32 @@
 }
 
 .p-parallax-img {
-    background-image: url("../images/bg.jpeg");
     min-height: 75vh; 
 
     /*  parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 
     margin: 0 -40%;
 }
 
+@media (min-width: 767px) {
+    .p-parallax-img {
+        background-image: url("../images/bg.jpeg");
+        /*  parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 @media (max-width: 767px) {
     .p-parallax-img {
+        background-image: url("../images/bg-sm.jpg");
         height: 500px;
+        /*  parallax scrolling effect */
         background-attachment: scroll;
         background-position: 50%;
+        background-size: contain;
     }
 }
 
