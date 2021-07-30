@@ -25,16 +25,16 @@ h6 {
 }
 
 div.p-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
     color: $priamry-txt-color;
 }
 
 p.p-txt-lg {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 2.5rem;
     margin-block-start: 1.67em;
     margin-block-end: 1.67em;
     margin-inline-start: 0px;
@@ -50,15 +50,15 @@ p.p-txt-body {
     color: $priamry-txt-color;
 }
 p.p-txt-md {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    line-height: 1.3;
-    opacity: .9;
-    margin: 2px 0 0.3rem;
+    line-height: 1.5;
+    opacity: .8;
+    margin: 0.1rem 0 0.1rem;
 }
 
 label.p-txt-label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin-top: 2px;
     opacity: .7;
@@ -88,7 +88,7 @@ label.p-label-emp {
 
 @media (max-width: 599px) {
     p.p-txt-lg {
-        font-size: 28px;
+        font-size: 1.5rem;
         line-height: 36px;
     }
 }
