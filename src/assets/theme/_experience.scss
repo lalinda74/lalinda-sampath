@@ -9,6 +9,11 @@
 }
 
 @media (max-width: 767px) {
+    .wrapper#experience{
+        margin: 4rem auto 1rem;
+    }
+}
+@media (max-width: 767px) {
     #experience .blocks {
         grid-template-columns: repeat(2,1fr);
     }
