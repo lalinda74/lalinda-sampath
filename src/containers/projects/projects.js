@@ -1,8 +1,8 @@
 import React from 'react';
 import './projects.scss';
-import Poster1x from  '../../assets/images/poster1-1x.png';
-import Poster2x from  '../../assets/images/poster1-2x.png';
-import Poster2 from  '../../assets/images/poster2.jpeg';
+import PosterOne1x from  '../../assets/images/poster1-1x.png';
+import PosterOne2x from  '../../assets/images/poster1-2x.png';
+import PosterTwo2x from  '../../assets/images/poster2-2x.png';
 // import Poster3 from  '../../assets/images/poster3.jpeg';
 
 function useOnScreen(options) {
@@ -41,10 +41,10 @@ function Projects() {
         </div>
         <div className="p-slider">
           <div className="p-banner">
-            <img src= {Poster1x} srcSet={`${Poster1x} 1x, ${Poster2x} 2x`} loading = "lazy" alt = "banner 1" />
+            <img src= {PosterOne1x} srcSet={`${PosterOne1x} 1x, ${PosterOne2x} 2x`} loading = "lazy" alt = "banner 1" />
           </div>
           <div className="p-banner">
-            <img src= {Poster2} srcSet={`${Poster2} 1x, ${Poster2} 2x`} loading = "lazy" alt = "banner 2" />
+            <img src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
           </div>
           {/* <div className="p-banner">
             <img src= {Poster3} srcSet={`${Poster3} 1x, ${Poster3} 2x`} alt = "banner 3" />
