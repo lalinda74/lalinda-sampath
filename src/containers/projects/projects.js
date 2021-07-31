@@ -3,7 +3,7 @@ import './projects.scss';
 import Poster1x from  '../../assets/images/poster1-1x.png';
 import Poster2x from  '../../assets/images/poster1-2x.png';
 import Poster2 from  '../../assets/images/poster2.jpeg';
-import Poster3 from  '../../assets/images/poster3.jpeg';
+// import Poster3 from  '../../assets/images/poster3.jpeg';
 
 function useOnScreen(options) {
   const [ref, setRef] = React.useState(null);
@@ -33,7 +33,7 @@ function Projects() {
   const [setRef, visible] = useOnScreen({threshold: '0.2'});
 
   return (
-    <section id = "projects" className={`p-init-opacity ${visible ? "p-slidedown" : ""}`} ref={setRef}>
+    <section id = "projects" ref={setRef}>
       <div>
         <div className="text-wrapper">
           <h6>some work I have done</h6>
