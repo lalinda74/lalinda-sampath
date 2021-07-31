@@ -1,5 +1,6 @@
 .wrapper#experience {
     margin: 7rem auto 7rem;
+    @include base-spacings(7rem, auto, 7rem, auto);
 }
 #experience .blocks {
     margin: 1rem 0;

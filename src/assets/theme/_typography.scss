@@ -10,28 +10,28 @@ h1, h2, p {
 h1.p-title {
     font-family: 'Caveat', cursive;
     font-size: 4rem;
-    @extend .mb-2;
+    @include base-spacings(0, 0, 1rem, 0);
 }
 h2 {
     font-family: Averia Gruesa Libre,serif;
     font-size: 3rem;
     font-weight: 600;
     text-decoration: none;
-    margin: 0;
+    @include base-spacings(0, 0, 0, 0);
 }
 h6 {
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin: 16px 0 5px;
+    @include base-spacings(16px, 0, 5px, 0);
     color: $secondary-txt-color;
 }
 
 div.p-subtitle {
     font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: 0.3rem;
+    @include base-spacings(0, 0, 0.3rem, 0);
     color: $priamry-txt-color;
 }
 
@@ -50,7 +50,7 @@ p.p-txt-body {
     font-weight: 400;
     line-height: 1.7rem;
     opacity: .8;
-    margin-bottom: 1rem;
+    @include base-spacings(0, 0, 1rem, 0);
     color: $priamry-txt-color;
 }
 p.p-txt-md {
@@ -58,13 +58,13 @@ p.p-txt-md {
     font-weight: 500;
     line-height: 1.5;
     opacity: .8;
-    margin: 0.1rem 0 0.1rem;
+    @include base-spacings(0.1rem, 0, 0.1rem, 0);
 }
 
 label.p-txt-label {
     font-size: 0.8rem;
     font-weight: 300;
-    margin-top: 2px;
+    @include base-spacings(2px, 0, 0, 0);
     opacity: .7;
 }
 label.p-label-emp {
@@ -112,7 +112,7 @@ label.p-label-emp {
 @media (max-width: 767px) {
     p.p-txt-md {
         font-size: 0.8rem;
-        margin: 0;
+        @include base-spacings(0, 0, 0, 0);
     }
 }
 @media (max-width: 767px) {

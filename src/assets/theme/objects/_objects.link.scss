@@ -1,7 +1,12 @@
 .p-link {
     position: relative;
     display: inline-block;
-    font-size: 0.85rem;
+    &--small {
+        font-size: 0.85rem;
+    }
+    &--md {
+        font-size: 1rem;
+    }
     &--plain {
         color: unset !important;
         opacity: 0.66;

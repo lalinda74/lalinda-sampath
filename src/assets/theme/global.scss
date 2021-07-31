@@ -2,12 +2,12 @@
 // settings
 @import './settings/settings.colors';
 
-@import './typography';
-
 // generics
 @import './generics/generics.elements';
 @import './generics/generics.animations';
 @import './generics/generics.spacings';
+
+@import './typography';
 
 @import './_wrapper.scss';
 @import './_banner.scss';
