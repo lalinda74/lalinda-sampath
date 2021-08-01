@@ -9,7 +9,7 @@ function Footer() {
         <h2 className="p-title">Let's Connect</h2>
       </div>
       <div>
-        <div className="p-subtitle mb-2">diaslalinda@gmail.com</div>
+        <div className="p-subtitle mb-1">diaslalinda@gmail.com</div>
         <ul className="p-row">
           <li>
             <a className="p-link p-link--small p-link--plain p-link--medium" href="https://dribbble.com/lalinda" target="_blank" rel="noreferrer">Dribble</a>

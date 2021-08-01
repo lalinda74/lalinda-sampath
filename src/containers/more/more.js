@@ -28,7 +28,7 @@ function More() {
         <p className="p-txt-md">Other than my passion towards tech and design, I have strong interests in photography, travel, 
         and fitness.</p>
         <br />
-        <p className="mb-5 p-txt-md">Nice to meet you. 👋</p>
+        <p className="mb-3 p-txt-md">Nice to meet you. 👋</p>
       </div>
       {/* <div className="gallery">
         <picture>

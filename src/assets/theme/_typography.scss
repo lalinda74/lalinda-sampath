@@ -1,38 +1,36 @@
 html {
-    font-size: 18px;
+    font-size: var(--base-font-size);
 }
 
 h1, h2, p {
-    color: $priamry-txt-color;
+    color: var(--primary-txt-color);
 }
 
 // title fonts
 h1.p-title {
     font-family: 'Caveat', cursive;
     font-size: 4rem;
-    @include base-spacings(0, 0, 1rem, 0);
 }
 h2 {
     font-family: Averia Gruesa Libre,serif;
     font-size: 3rem;
     font-weight: 600;
     text-decoration: none;
-    @include base-spacings(0, 0, 0, 0);
 }
 h6 {
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    @include base-spacings(16px, 0, 5px, 0);
-    color: $secondary-txt-color;
+    margin: 16px 0 5px 0;
+    color: var(--secondary-txt-color);
 }
 
 div.p-subtitle {
     font-size: 1.125rem;
     font-weight: 600;
-    @include base-spacings(0, 0, 0.3rem, 0);
-    color: $priamry-txt-color;
+    margin-bottom: 0.3rem;
+    color: var(--primary-txt-color);
 }
 
 p.p-txt-lg {
@@ -43,28 +41,27 @@ p.p-txt-lg {
     margin-block-end: 1.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    color: $alt-txt-color;
+    color: var(--alt-txt-color);
 }
 p.p-txt-body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.7rem;
     opacity: .8;
-    @include base-spacings(0, 0, 1rem, 0);
-    color: $priamry-txt-color;
+    color: var(--primary-txt-color);
 }
 p.p-txt-md {
     font-size: 0.9rem;
     font-weight: 500;
     line-height: 1.5;
     opacity: .8;
-    @include base-spacings(0.1rem, 0, 0.1rem, 0);
+    margin: 0.1rem 0;
 }
 
 label.p-txt-label {
     font-size: 0.8rem;
     font-weight: 300;
-    @include base-spacings(2px, 0, 0, 0);
+    margin-top: 0.1rem;
     opacity: .7;
 }
 label.p-label-emp {
@@ -72,50 +69,50 @@ label.p-label-emp {
     font-weight: 600;
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     h1.p-title {
         font-size: 3rem;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     h2 {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     p.p-txt-body {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: var(--small)) {
     p.p-txt-lg {
         font-size: 1.5rem;
         line-height: 36px;
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: var(--medium)) {
     h3.p-subtitle {
         font-size: 20px;
         line-height: 27px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     div.p-subtitle {
         font-size: 1rem;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     p.p-txt-md {
         font-size: 0.8rem;
-        @include base-spacings(0, 0, 0, 0);
+        margin: 0;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     label.p-txt-label {
         font-size: 0.7rem;
     }

@@ -19,7 +19,7 @@ function Stories() {
             </li>
         );
         return (
-            <ul className="blocks p-article-wrapper">{listItems}</ul>
+            <ul className="mt-2">{listItems}</ul>
         );
     }
 
@@ -29,7 +29,7 @@ function Stories() {
             <div className="content wrapper--slim">
                 <div className="content__inner-wrapper">
                     <h6>I SHARE</h6>
-                    <h2 className="mb-5 p-title">Stories and Learnings</h2>
+                    <h2 className="mb-2 p-title">Stories and Learnings</h2>
                 </div>
                 <ShowArticles list={articlesList} />
             </div>
