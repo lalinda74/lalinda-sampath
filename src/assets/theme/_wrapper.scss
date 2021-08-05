@@ -80,11 +80,13 @@
 
 .p-parallax-img {
     min-height: 75vh; 
-
     /*  parallax scrolling effect */
     background-repeat: no-repeat;
-
     margin: 0 -40%;
+}
+
+.p-zoom-out-animation {
+    animation: zoom-out 2s ease-out;
 }
 
 @media (min-width: 767px) {

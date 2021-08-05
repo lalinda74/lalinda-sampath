@@ -1,6 +1,30 @@
+import React from 'react';
 import './stories.scss';
 import Article from '../../components/article/article';
 import Image from '../../assets/images/profile-image.jpeg';
+
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null);
+    const [visible, setVisible] = React.useState(false);
+  
+    React.useEffect(() => {
+      const observer = new IntersectionObserver(([entry]) => {
+        setVisible(entry.isIntersecting);
+      }, options);
+  
+      if (ref) {
+        observer.observe(ref);
+      }
+  
+      return () => {
+        if (ref) {
+          observer.unobserve(ref);
+        }
+      };
+    }, [ref, options])
+  
+    return [setRef, visible];
+}
 
 function Stories() {
 
@@ -23,9 +47,11 @@ function Stories() {
         );
     }
 
+    const [setRef, visible] = useOnScreen({threshold: '0.2'});
+
     return (
-        <section className="wrapper">
-            <div className="p-parallax-img"></div>
+        <section className="wrapper" ref={setRef}>
+            <div className={`p-parallax-img ${visible ? "p-zoom-out-animation" : ""}`}></div>
             <div className="content wrapper--slim">
                 <div className="content__inner-wrapper">
                     <h6>I SHARE</h6>
