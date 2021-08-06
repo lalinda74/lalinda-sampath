@@ -41,7 +41,7 @@ function Projects() {
         </div>
         <div className="p-slider">
           <div className="p-banner">
-            <img src= {PosterOne1x} srcSet={`${PosterOne1x} 1x, ${PosterOne2x} 2x`} loading = "lazy" alt = "banner 1" />
+            <img src= {PosterOne2x} srcSet={`${PosterOne2x} 1x, ${PosterOne2x} 2x`} loading = "lazy" alt = "banner 1" />
           </div>
           <div className="p-banner">
             <img src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
