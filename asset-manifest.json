@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lalinda-sampath/static/css/main.73b79d64.chunk.css",
-    "main.js": "/lalinda-sampath/static/js/main.8a859e3b.chunk.js",
-    "main.js.map": "/lalinda-sampath/static/js/main.8a859e3b.chunk.js.map",
+    "main.css": "/lalinda-sampath/static/css/main.e6217bf0.chunk.css",
+    "main.js": "/lalinda-sampath/static/js/main.ffb5ceb7.chunk.js",
+    "main.js.map": "/lalinda-sampath/static/js/main.ffb5ceb7.chunk.js.map",
     "runtime-main.js": "/lalinda-sampath/static/js/runtime-main.5a4bd3d8.js",
     "runtime-main.js.map": "/lalinda-sampath/static/js/runtime-main.5a4bd3d8.js.map",
     "static/js/2.c2862a1a.chunk.js": "/lalinda-sampath/static/js/2.c2862a1a.chunk.js",
@@ -10,24 +10,18 @@
     "static/js/3.af43fd20.chunk.js": "/lalinda-sampath/static/js/3.af43fd20.chunk.js",
     "static/js/3.af43fd20.chunk.js.map": "/lalinda-sampath/static/js/3.af43fd20.chunk.js.map",
     "index.html": "/lalinda-sampath/index.html",
-    "static/css/main.73b79d64.chunk.css.map": "/lalinda-sampath/static/css/main.73b79d64.chunk.css.map",
+    "static/css/main.e6217bf0.chunk.css.map": "/lalinda-sampath/static/css/main.e6217bf0.chunk.css.map",
     "static/js/2.c2862a1a.chunk.js.LICENSE.txt": "/lalinda-sampath/static/js/2.c2862a1a.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/lalinda-sampath/static/media/bg.45394d2a.jpeg",
-    "static/media/gallery1-1x.4a1d0c7d.jpg": "/lalinda-sampath/static/media/gallery1-1x.4a1d0c7d.jpg",
-    "static/media/gallery1.fc77d755.jpeg": "/lalinda-sampath/static/media/gallery1.fc77d755.jpeg",
-    "static/media/gallery2.c310cf39.jpeg": "/lalinda-sampath/static/media/gallery2.c310cf39.jpeg",
-    "static/media/gallery3.b0d32386.jpeg": "/lalinda-sampath/static/media/gallery3.b0d32386.jpeg",
-    "static/media/gallery4.f8232544.jpeg": "/lalinda-sampath/static/media/gallery4.f8232544.jpeg",
     "static/media/poster1-1x.995fd9ab.png": "/lalinda-sampath/static/media/poster1-1x.995fd9ab.png",
-    "static/media/poster1-2x.43ca8757.png": "/lalinda-sampath/static/media/poster1-2x.43ca8757.png",
-    "static/media/poster2.827f5e75.jpeg": "/lalinda-sampath/static/media/poster2.827f5e75.jpeg",
-    "static/media/poster3.8258c911.jpeg": "/lalinda-sampath/static/media/poster3.8258c911.jpeg",
+    "static/media/poster1-2x.fd9f7002.png": "/lalinda-sampath/static/media/poster1-2x.fd9f7002.png",
+    "static/media/poster2-2x.f43220b2.png": "/lalinda-sampath/static/media/poster2-2x.f43220b2.png",
     "static/media/profile-image.ecbd95f3.jpeg": "/lalinda-sampath/static/media/profile-image.ecbd95f3.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.5a4bd3d8.js",
     "static/js/2.c2862a1a.chunk.js",
-    "static/css/main.73b79d64.chunk.css",
-    "static/js/main.8a859e3b.chunk.js"
+    "static/css/main.e6217bf0.chunk.css",
+    "static/js/main.ffb5ceb7.chunk.js"
   ]
 }
