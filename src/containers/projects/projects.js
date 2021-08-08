@@ -1,6 +1,6 @@
 import React from 'react';
 import './projects.scss';
-import PosterOne1x from  '../../assets/images/poster1-1x.png';
+// import PosterOne1x from  '../../assets/images/poster1-1x.png';
 import PosterOne2x from  '../../assets/images/poster1-2x.png';
 import PosterTwo2x from  '../../assets/images/poster2-2x.png';
 // import Poster3 from  '../../assets/images/poster3.jpeg';
@@ -43,10 +43,14 @@ function Projects() {
         </div>
         <div className="p-slider">
           <div className="p-banner">
-            <img src= {PosterOne2x} srcSet={`${PosterOne2x} 1x, ${PosterOne2x} 2x`} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 1" />
+            <a href = "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app" target="_blank" rel="noreferrer">
+              <img src= {PosterOne2x} srcSet={`${PosterOne2x} 1x, ${PosterOne2x} 2x`} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 1" />
+            </a>
           </div>
           <div className="p-banner">
-            <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
+            <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noreferrer">
+              <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
+            </a>
           </div>
           {/* <div className="p-banner">
             <img src= {Poster3} srcSet={`${Poster3} 1x, ${Poster3} 2x`} alt = "banner 3" />
