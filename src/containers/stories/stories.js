@@ -1,7 +1,7 @@
 import React from 'react';
 import './stories.scss';
 import Article from '../../components/article/article';
-import Image from '../../assets/images/profile-image.jpeg';
+import Image from '../../assets/images/article1.png';
 
 function useOnScreen(options) {
     const [ref, setRef] = React.useState(null);
