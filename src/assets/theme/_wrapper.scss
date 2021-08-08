@@ -85,8 +85,14 @@
     margin: 0 -40%;
 }
 
-.p-zoom-out-animation {
-    animation: zoom-out 2s ease-out;
+.p-zoom-out {
+    &__initial {
+        opacity: 0.6;
+        transform: scale(1.2, 1.2);
+    }
+    &__animation {
+        animation: zoom-out 2s ease-out;
+    }
 }
 
 @media (min-width: 767px) {

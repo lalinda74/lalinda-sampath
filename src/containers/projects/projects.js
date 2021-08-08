@@ -11,7 +11,9 @@ function useOnScreen(options) {
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      setVisible(entry.isIntersecting);
+      if (visible === false) {
+          setVisible(entry.isIntersecting);
+      }
     }, options);
 
     if (ref) {
@@ -23,7 +25,7 @@ function useOnScreen(options) {
         observer.unobserve(ref);
       }
     };
-  }, [ref, options])
+  }, [ref, options, visible])
 
   return [setRef, visible];
 }
@@ -41,10 +43,10 @@ function Projects() {
         </div>
         <div className="p-slider">
           <div className="p-banner">
-            <img src= {PosterOne1x} srcSet={`${PosterOne1x} 1x, ${PosterOne2x} 2x`} loading = "lazy" alt = "banner 1" />
+            <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterOne1x} srcSet={`${PosterOne1x} 1x, ${PosterOne2x} 2x`} loading = "lazy" alt = "banner 1" />
           </div>
           <div className="p-banner">
-            <img src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
+            <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
           </div>
           {/* <div className="p-banner">
             <img src= {Poster3} srcSet={`${Poster3} 1x, ${Poster3} 2x`} alt = "banner 3" />

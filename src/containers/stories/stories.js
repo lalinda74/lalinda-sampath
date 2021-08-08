@@ -9,7 +9,9 @@ function useOnScreen(options) {
   
     React.useEffect(() => {
       const observer = new IntersectionObserver(([entry]) => {
-        setVisible(entry.isIntersecting);
+        if (visible === false) {
+            setVisible(entry.isIntersecting);
+        }
       }, options);
   
       if (ref) {
@@ -21,12 +23,14 @@ function useOnScreen(options) {
           observer.unobserve(ref);
         }
       };
-    }, [ref, options])
+    }, [ref, options, visible])
   
     return [setRef, visible];
 }
 
 function Stories() {
+
+    const [setRef, visible] = useOnScreen({threshold: '0.2'});
 
     const articlesList = [
         { title: 'Which Text Case to Use', desc: 'Ever wondered which text case to use ? A little thing like capitalization...', img: Image, src: 'https://medium.com/@diaslalinda/which-text-case-to-use-d583b2ad2006' },
@@ -47,11 +51,9 @@ function Stories() {
         );
     }
 
-    const [setRef, visible] = useOnScreen({threshold: '0.2'});
-
     return (
         <section className="wrapper" ref={setRef}>
-            <div className={`p-parallax-img ${visible ? "p-zoom-out-animation" : ""}`}></div>
+            <div className={`p-parallax-img ${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`}></div>
             <div className="content wrapper--slim">
                 <div className="content__inner-wrapper">
                     <h6>I SHARE</h6>
