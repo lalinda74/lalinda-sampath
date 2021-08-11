@@ -2,6 +2,7 @@ import React from 'react';
 import './projects.scss';
 // import PosterOne1x from  '../../assets/images/poster1-1x.png';
 import PosterOne2x from  '../../assets/images/poster1-2x.png';
+import PosterTwo1x from  '../../assets/images/poster2-1x.png';
 import PosterTwo2x from  '../../assets/images/poster2-2x.png';
 // import Poster3 from  '../../assets/images/poster3.jpeg';
 
@@ -49,7 +50,7 @@ function Projects() {
           </div>
           <div className="p-banner">
             <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noreferrer">
-              <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo2x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
+              <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo1x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
             </a>
           </div>
           {/* <div className="p-banner">
