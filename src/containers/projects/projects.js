@@ -55,7 +55,7 @@ function Projects() {
           <div className="p-banner">
             <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noreferrer">
               <picture>
-                <source srcset={`${PosterTwo2x}`} media="(max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi)" />
+                <source srcset={`${PosterTwo2x}`} media="(max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi)" />
                 <source srcset={`${PosterTwo1x}`} media="(max-width: 768px)" />
                 <source srcset={`${PosterTwo2x}`} media="(min-width: 768px)" />
                <img src= {PosterTwo1x} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 2" />
