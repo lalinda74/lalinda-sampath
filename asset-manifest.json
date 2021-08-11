@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lalinda-sampath/static/css/main.f5229bbb.chunk.css",
-    "main.js": "/lalinda-sampath/static/js/main.4c4fca75.chunk.js",
-    "main.js.map": "/lalinda-sampath/static/js/main.4c4fca75.chunk.js.map",
+    "main.js": "/lalinda-sampath/static/js/main.f8ed1fe8.chunk.js",
+    "main.js.map": "/lalinda-sampath/static/js/main.f8ed1fe8.chunk.js.map",
     "runtime-main.js": "/lalinda-sampath/static/js/runtime-main.5a4bd3d8.js",
     "runtime-main.js.map": "/lalinda-sampath/static/js/runtime-main.5a4bd3d8.js.map",
     "static/js/2.c2862a1a.chunk.js": "/lalinda-sampath/static/js/2.c2862a1a.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.5a4bd3d8.js",
     "static/js/2.c2862a1a.chunk.js",
     "static/css/main.f5229bbb.chunk.css",
-    "static/js/main.4c4fca75.chunk.js"
+    "static/js/main.f8ed1fe8.chunk.js"
   ]
 }
