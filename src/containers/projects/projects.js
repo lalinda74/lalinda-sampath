@@ -45,12 +45,20 @@ function Projects() {
         <div className="p-slider">
           <div className="p-banner">
             <a href = "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app" target="_blank" rel="noreferrer">
-              <img src= {PosterOne2x} srcSet={`${PosterOne2x} 1x, ${PosterOne2x} 2x`} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 1" />
+              <picture>
+                <source srcset={`${PosterOne2x}`} media="(max-width: 768px)" />
+                <source srcset={`${PosterOne2x}`} media="(min-width: 768px)" />
+                <img src= {PosterOne2x} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 1" />
+              </picture>
             </a>
           </div>
           <div className="p-banner">
             <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noreferrer">
-              <img className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} src= {PosterTwo2x} srcSet={`${PosterTwo1x} 1x, ${PosterTwo2x} 2x`} loading = "lazy" alt = "banner 2" />
+              <picture>
+                <source srcset={`${PosterOne2x}`} media="(max-width: 768px)" />
+                <source srcset={`${PosterOne2x}`} media="(min-width: 768px)" />
+               <img src= {PosterTwo2x} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 2" />
+              </picture>
             </a>
           </div>
           {/* <div className="p-banner">
