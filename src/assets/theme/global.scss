@@ -1,8 +1,8 @@
 
 // globals
+@import './globals/globals.breakpoints';
 @import './globals/globals.colors';
 @import './globals/globals.typography';
-@import './globals/globals.breakpoints';
 
 // generics
 @import './generics/generics.elements';
@@ -22,6 +22,7 @@
 
 // components
 @import './components/components.article';
+@import './components/components.landing-page';
 
 // containers
 @import './experience';

@@ -1,5 +1,4 @@
 import React from 'react';
-import './stories.scss';
 import Article from '../../components/article/article';
 import Article1 from '../../assets/images/article1.png';
 import Article2 from '../../assets/images/article2.png';

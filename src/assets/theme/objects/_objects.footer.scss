@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-@media (max-width: var(--medium)) {
+@media (max-width: 768px) {
     .p-footer {
         padding: 24px 24px 64px;
         grid-template-columns: unset;

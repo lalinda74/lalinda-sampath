@@ -1,4 +1,3 @@
-import './experience.scss';
 import Tile from '../../components/tile/tile';
 
 function Experience() {

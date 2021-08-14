@@ -1,4 +1,3 @@
-import './landing-page.scss';
 import profileImage from '../../assets/images/profile-image.jpeg';
 
 function LandingPage() {

@@ -1,4 +1,3 @@
-import './tile.scss';
 
 function Tile(props) {
   return (

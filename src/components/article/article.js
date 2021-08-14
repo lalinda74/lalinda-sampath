@@ -1,4 +1,3 @@
-import './article.scss';
 
 function Article(props) {
   return (

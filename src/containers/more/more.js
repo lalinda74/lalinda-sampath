@@ -1,9 +1,3 @@
-import './more.scss';
-// import Gallery1 from '../../assets/images/gallery1.jpeg';
-// import Gallery1x from '../../assets/images/gallery1-1x.jpg';
-// import Gallery2 from '../../assets/images/gallery2.jpeg';
-// import Gallery3 from '../../assets/images/gallery3.jpeg';
-// import Gallery4 from '../../assets/images/gallery4.jpeg';
 
 function More() {
 
