@@ -15,16 +15,15 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: var(--medium)) {
     .p-banner {
         width: 80vw;
         min-width: unset;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
+@media only screen and (min-width: var(--medium)) and (max-width: var(--large)) {
     .p-banner {
-        width: 33vw;
         min-width: unset;
         height: 45vh;
     }
