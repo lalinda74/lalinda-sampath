@@ -95,7 +95,7 @@
     }
 }
 
-@media (min-width: var(--medium)) {
+@media (min-width: 768px) {
     .p-parallax-img {
         background-image: url("../images/bg.jpeg");
         /*  parallax scrolling effect */
@@ -105,7 +105,7 @@
     }
 }
 
-@media (max-width: var(--medium)) {
+@media (max-width: 768px) {
     .p-parallax-img {
         background-image: url("../images/bg-sm.jpg");
         height: 500px;
