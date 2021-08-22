@@ -1,18 +1,17 @@
 import React from 'react';
-import PosterOne1x from  '../../assets/images/poster1-1x.png';
-import PosterOne2x from  '../../assets/images/poster1-2x.png';
-import PosterTwo1x from  '../../assets/images/poster2-1x.png';
-import PosterTwo2x from  '../../assets/images/poster2-2x.png';
-// import Poster3 from  '../../assets/images/poster3.jpeg';
+import PosterOne1x from '../../assets/images/poster1-1x.png';
+import PosterOne2x from '../../assets/images/poster1-2x.png';
+import PosterTwo1x from '../../assets/images/poster2-1x.png';
+import PosterTwo2x from '../../assets/images/poster2-2x.png';
 
-function useOnScreen(options) {
+function useOnScreen (options) {
   const [ref, setRef] = React.useState(null);
   const [visible, setVisible] = React.useState(false);
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (visible === false) {
-          setVisible(entry.isIntersecting);
+        setVisible(entry.isIntersecting);
       }
     }, options);
 
@@ -25,14 +24,13 @@ function useOnScreen(options) {
         observer.unobserve(ref);
       }
     };
-  }, [ref, options, visible])
+  }, [ref, options, visible]);
 
   return [setRef, visible];
 }
 
-function Projects() {
-
-  const [setRef, visible] = useOnScreen({threshold: '0.2'});
+function Projects () {
+  const [setRef, visible] = useOnScreen({ threshold: '0.2' });
 
   return (
     <section id = "projects" ref={setRef}>
@@ -47,7 +45,7 @@ function Projects() {
               <picture>
                 <source srcSet={`${PosterOne1x}`} media="(max-width: 768px)" />
                 <source srcSet={`${PosterOne2x}`} media="(min-width: 768px)" />
-                <img src= {PosterOne2x} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 1" />
+                <img src= {PosterOne2x} className={`${visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'}`} loading = "lazy" alt = "banner 1" />
               </picture>
             </a>
           </div>
@@ -57,7 +55,7 @@ function Projects() {
                 {/* <source srcset={`${PosterTwo2x}`} media="(max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi)" /> */}
                 <source srcSet={`${PosterTwo1x}`} media="(max-width: 768px)" />
                 <source srcSet={`${PosterTwo2x}`} media="(min-width: 768px)" />
-               <img src= {PosterTwo1x} className={`${visible ? "p-zoom-out__animation" : "p-zoom-out__initial"}`} loading = "lazy" alt = "banner 2" />
+               <img src= {PosterTwo1x} className={`${visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'}`} loading = "lazy" alt = "banner 2" />
               </picture>
             </a>
           </div>

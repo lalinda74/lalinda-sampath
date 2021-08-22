@@ -1,11 +1,10 @@
 
-function Footer() {
-
+function Footer () {
   return (
     <footer className="wrapper wrapper--slim p-footer">
       <div>
-        <h6 className="p-subtitle">Don't be a stranger</h6>
-        <h2 className="p-title">Let's Connect</h2>
+        <h6 className="p-subtitle">Don{"'"}t be a stranger</h6>
+        <h2 className="p-title">Let{"'"}s Connect</h2>
       </div>
       <div>
         <div className="p-subtitle mb-1">diaslalinda@gmail.com</div>

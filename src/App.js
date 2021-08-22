@@ -1,20 +1,25 @@
+import React, { Suspense } from 'react';
+
 import './App.scss';
 import LandingPage from './containers/landing-page/landing-page';
-import Experience from './containers/experience/experience';
-import Projects from './containers/projects/projects';
-import Stories from  './containers/stories/stories';
-import Footer from './containers/footer/footer';
-import More from './containers/more/more';
 
-function App() {
+const Projects = React.lazy(() => import('./containers/projects/projects'));
+const Experience = React.lazy(() => import('./containers/experience/experience'));
+const Stories = React.lazy(() => import('./containers/stories/stories'));
+const Footer = React.lazy(() => import('./containers/footer/footer'));
+const More = React.lazy(() => import('./containers/more/more'));
+
+function App () {
   return (
     <div className="parent-wrapper">
       <LandingPage />
-      <Projects />
-      <Experience />
-      <Stories />
-      <More />
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Projects />
+        <Experience />
+        <Stories />
+        <More />
+        <Footer />
+      </Suspense>
     </div>
   );
 }
