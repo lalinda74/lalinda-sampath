@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 
-function Tile(props) {
+function Tile (props) {
   return (
     <section className="tile">
       <div className="p-subtitle">{props.company}</div>
@@ -8,5 +9,11 @@ function Tile(props) {
     </section>
   );
 }
+
+Tile.propTypes = {
+  company: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired,
+  duration: PropTypes.string.isRequired
+};
 
 export default Tile;

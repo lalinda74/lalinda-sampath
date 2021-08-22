@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 
-function Article(props) {
+function Article (props) {
   return (
     <a className="article" href={props.src} target="_blank" rel="noreferrer">
       <div>
@@ -15,5 +16,12 @@ function Article(props) {
     </a>
   );
 }
+
+Article.propTypes = {
+  src: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired
+};
 
 export default Article;

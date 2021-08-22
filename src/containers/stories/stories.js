@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Article from '../../components/article/article';
 import Article1 from '../../assets/images/article1.png';
 import Article2 from '../../assets/images/article2.png';
@@ -28,6 +29,18 @@ function useOnScreen (options) {
   return [setRef, visible];
 }
 
+function ShowArticles (props) {
+  const expList = props.list;
+  const listItems = expList.map((item, i) =>
+            <li key={i}>
+                <Article {...item} />
+            </li>
+  );
+  return (
+            <ul className="mt-2">{listItems}</ul>
+  );
+}
+
 function Stories () {
   const [setRef, visible] = useOnScreen({ threshold: '0.2' });
 
@@ -37,18 +50,6 @@ function Stories () {
     { title: 'Managing Large UI Development Projects', desc: 'Usually people thinks that CSS or SASS can be written in any way.', img: Article2, src: 'https://medium.com/@diaslalinda/managing-large-ui-development-projects-61a7166834f7' },
     { title: 'Media Queries in Responsive Web Design', desc: 'For those who wonder what media queries is, media query...', img: Article2, src: 'https://medium.com/@diaslalinda/media-queries-in-responsive-web-design-51bfb9fcc9ff' }
   ];
-
-  function ShowArticles (props) {
-    const expList = props.list;
-    const listItems = expList.map((item, i) =>
-            <li key={i}>
-                <Article {...item} />
-            </li>
-    );
-    return (
-            <ul className="mt-2">{listItems}</ul>
-    );
-  }
 
   return (
         <section className="wrapper" ref={setRef}>
@@ -63,5 +64,9 @@ function Stories () {
         </section>
   );
 }
+
+ShowArticles.propTypes = {
+  list: PropTypes.array.isRequired
+};
 
 export default Stories;
