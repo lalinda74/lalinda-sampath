@@ -41,7 +41,7 @@ function Projects () {
         </div>
         <div className="p-slider">
           <div className="p-banner">
-            <a href = "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app" target="_blank" rel="noreferrer">
+            <a href = "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app" target="_blank" rel="noopener noreferrer">
               <picture>
                 <source srcSet={`${PosterOne1x}`} media="(max-width: 768px)" />
                 <source srcSet={`${PosterOne2x}`} media="(min-width: 768px)" />
@@ -50,7 +50,7 @@ function Projects () {
             </a>
           </div>
           <div className="p-banner">
-            <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noreferrer">
+            <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" target="_blank" rel="noopener noreferrer">
               <picture>
                 {/* <source srcset={`${PosterTwo2x}`} media="(max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi)" /> */}
                 <source srcSet={`${PosterTwo1x}`} media="(max-width: 768px)" />

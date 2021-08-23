@@ -1,3 +1,4 @@
+import React from 'react';
 
 function More () {
   return (
@@ -6,10 +7,10 @@ function More () {
         <h6>BUT WAIT - </h6>
         <h2 className="mb-3 p-title">There{"'"}s more</h2>
         <p className="p-txt-md mt-3">Other than my passion towards tech and design, I have strong interests in fitness, travel.
-          <br />Oh, wanna know about my 🦄 story ?</p>
+          <br />Oh, wanna know about my <span role="img" aria-label="Unicorn">🦄</span> story ?</p>
         <br />
         <p className="p-txt-md">I am a front-end developer and UI designer. I{"'"}m working with talented folks at ADL and currently
-        based in Colombo 🇱🇰. I like designing for impact and empowering clients in all sizes.</p>
+        based in Colombo <span role="img" aria-label="Sri Lanka">🇱🇰</span>. I like designing for impact and empowering clients in all sizes.</p>
         <br />
         <p className="p-txt-md">I started my career 5 years ago as a UI/UX Engineer where I was able to work with world leading
         businesses.</p>
@@ -21,7 +22,7 @@ function More () {
         <p className="p-txt-md">Other than my passion towards tech and design, I have strong interests in photography, travel,
         and fitness.</p>
         <br />
-        <p className="mb-3 p-txt-md">Nice to meet you. 👋</p>
+        <p className="mb-3 p-txt-md">Nice to meet you. <span role="img" aria-label="Hi">👋</span></p>
       </div>
     </section>
   );
