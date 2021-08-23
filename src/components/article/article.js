@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Article (props) {
   return (
-    <a className="article" href={props.src} target="_blank" rel="noreferrer">
+    <a className="article" aria-label="article" href={props.src} target="_blank" rel="noreferrer">
       <div>
         <p className="article__title">{props.title}</p>
         <p className="p-txt-md article__desc">{props.desc}</p>

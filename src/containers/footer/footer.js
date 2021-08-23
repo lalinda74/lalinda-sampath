@@ -11,16 +11,16 @@ function Footer () {
         <div className="p-subtitle mb-1">diaslalinda@gmail.com</div>
         <ul className="p-row">
           <li>
-            <a className="p-link p-link--small p-link--plain p-link--medium" href="https://dribbble.com/lalinda" target="_blank" rel="noopener noreferrer">Dribble</a>
+            <a className="p-link p-link--small p-link--plain p-link--medium" aria-label="Dribble" href="https://dribbble.com/lalinda" target="_blank" rel="noopener noreferrer">Dribble</a>
           </li>
           <li>
-            <a className="p-link p-link--small p-link--plain p-link--medium" href="https://twitter.com/laliyaD" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a className="p-link p-link--small p-link--plain p-link--medium" aria-label="Twitter" href="https://twitter.com/laliyaD" target="_blank" rel="noopener noreferrer">Twitter</a>
           </li>
           <li>
-            <a className="p-link p-link--small p-link--plain p-link--medium" href="https://medium.com/@diaslalinda" target="_blank" rel="noopener noreferrer">Medium</a>
+            <a className="p-link p-link--small p-link--plain p-link--medium" aria-label="Medium" href="https://medium.com/@diaslalinda" target="_blank" rel="noopener noreferrer">Medium</a>
           </li>
           <li>
-            <a className="p-link p-link--small p-link--plain p-link--medium" href="https://www.linkedin.com/in/lalindasampath/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="p-link p-link--small p-link--plain p-link--medium" aria-label="LinkedIn" href="https://www.linkedin.com/in/lalindasampath/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </li>
         </ul>
       </div>
