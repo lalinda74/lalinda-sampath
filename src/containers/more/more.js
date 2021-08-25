@@ -7,7 +7,7 @@ function More () {
         <h6>BUT WAIT - </h6>
         <h2 className="mb-3 p-title">There{"'"}s more</h2>
         <p className="p-txt-md mt-3">Other than my passion towards tech and design, I have strong interests in fitness, travel.
-          <br />Oh, wanna know about my <span role="img" aria-label="Unicorn">🦄</span> story ?</p>
+          <br />Oh, wanna know about my <span role="img" aria-label="Kangaroo">🦘</span> story ?</p>
         <br />
         <p className="p-txt-md">I am a front-end developer and UI designer. I{"'"}m working with talented folks at ADL and currently
         based in Colombo <span role="img" aria-label="Sri Lanka">🇱🇰</span>. I like designing for impact and empowering clients in all sizes.</p>

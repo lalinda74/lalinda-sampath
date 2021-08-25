@@ -1,0 +1,66 @@
+// wrapper container
+//
+// Use this class to wrap your container sections.
+// Typically you'll want to use either a `<section>` or `<div>` element.
+//
+// Markup:
+// <section class="wrapper"></section>
+//
+// Styleguide components.wrapper
+
+.parent-wrapper {
+    padding: 0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.wrapper {
+    grid-gap: 16px;
+    padding: 24px;
+    align-items: center;
+    animation: slide-down 1s forwards;
+    &--col-1 {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    &--col-2 {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    &--col-2-equal {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    &--slim {
+        max-width: 1024px;
+        margin: auto;
+    }
+    &--fh {
+        height: 100vh;
+    }
+}
+
+@media (max-width: var(--medium)) {
+    .wrapper--col-2 {
+        grid-template-columns: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1119px) {
+    .wrapper {
+        padding: 16px 32px;
+    }
+}
+
+
+.text-wrapper {
+    max-width: 1024px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+@media (max-width: 1119px) {
+    .text-wrapper {
+        padding: 0 32px;
+    }
+}

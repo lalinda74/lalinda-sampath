@@ -1,0 +1,24 @@
+// profile image object
+//
+// Use this class to show your images.
+// Typically you'll want to use either a `<span>` or `<div>` element.
+//
+// Markup:
+// <span class="wrapper"></span>
+//
+// Styleguide objects.profile-image
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        display: none;
+    }
+}

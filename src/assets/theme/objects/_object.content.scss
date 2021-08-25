@@ -1,0 +1,23 @@
+// content object
+//
+// Use this class overlap an element with another element.
+// Typically you'll want to use either a `<section>` or `<div>` element.
+//
+// Markup:
+// <section class="content"></section>
+//
+// Styleguide objects.content
+
+.content {
+    margin-top: -120px !important;
+    background: var(--bg);
+    padding: 64px 64px 40px;
+    position: relative;
+}
+
+@media (max-width: 599px) {
+    .content {
+        padding: 24px 0;
+        margin-top: 0;
+    }
+}

@@ -1,18 +1,12 @@
-
-.profile-image {
-    display: flex;
-    justify-content: center;
-    img {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .profile-image {
-        display: none;
-    }
-}
+// scroll button object
+//
+// Use this class to show a scroll button.
+// Typically you'll want to use either a `<span>` or `<div>` element.
+//
+// Markup:
+// <div class="scroll-btn"></section>
+//
+// Styleguide objects.scroll-button
 
 .scroll-btn {
     position: relative;
@@ -31,7 +25,7 @@
     width: 3px;
     padding: 3px 10px;
     height: 28px;
-    border: 1.5px solid #d0021b;
+    border: 1.5px solid var(--dribble);
     border-radius: 25px;
     opacity: .5;
     box-sizing: content-box;
@@ -40,7 +34,7 @@
     width: 3px;
     height: 8px;
     border-radius: 25%;
-    background-color: #d0021b;
+    background-color: var(--dribble);
     animation-name: scroll;
     animation-duration: 3s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);

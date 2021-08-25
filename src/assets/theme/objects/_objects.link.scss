@@ -12,10 +12,10 @@
         opacity: 0.66;
     }
     &--medium {
-        color: #00ab6c;
+        color: var(--medium);
         &:hover {
             cursor: pointer;
-            color: #d0021b !important;
+            color: var(--dribble) !important;
             text-decoration: none;
             &::after {
                 opacity: 1;
@@ -23,14 +23,14 @@
             }
         }
         &::after {
-            background: #ffe4e1;
+            background: var(--medium-trans);
         }
     }
     &--dribble {
-        color: #d0021b;
+        color: var(--dribble);
         &:hover {
             cursor: pointer;
-            color: #00ab6c !important;
+            color: var(--medium) !important;
             text-decoration: none;
             &::after {
                 opacity: 1;
@@ -38,7 +38,7 @@
             }
         }
         &::after {
-            background: #ebfaf5;
+            background: var(--dribble-trans);
         }
     }
     &::after {
