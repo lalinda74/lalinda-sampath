@@ -8,21 +8,20 @@
 @import './generics/generics.elements';
 @import './generics/generics.animations';
 @import './generics/generics.spacings';
-
-@import './typography';
-
-@import './_wrapper.scss';
-@import './_banner.scss';
+@import './generics/generics.typography';
 
 // objects
 @import './objects/objects.link';
 @import './objects/objects.gallery';
 @import './objects/objects.footer';
 @import './objects/objects.slider';
+@import './objects/object.parallax-img';
+@import './objects/object.content';
+@import './objects/objects.profile-img';
+@import './objects/objects.scroll-button';
 
 // components
 @import './components/components.article';
-@import './components/components.landing-page';
-
-// containers
-@import './experience';
+@import './components/components.banner';
+@import './components/components.wrapper';
+@import './components/components.experience';

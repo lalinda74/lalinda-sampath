@@ -1,0 +1,39 @@
+// parallax-img object
+//
+// Use this class to show a parallax image in background.
+// Typically you'll want to use either a `<section>` or `<div>` element.
+//
+// Markup:
+// <section class="p-parallax-img"></section>
+//
+// Styleguide components.parallax-img
+
+.p-parallax-img {
+    min-height: 75vh; 
+    /*  parallax scrolling effect */
+    background-repeat: no-repeat;
+    margin: 0 -40%;
+}
+
+// for tablets and higher resolution devices
+@media (min-width: 768px) {
+    .p-parallax-img {
+        background-image: url("../../images/bg.jpeg");
+        /*  parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+// for mobile devices
+@media (max-width: 768px) {
+    .p-parallax-img {
+        background-image: url("../../images/bg-sm.jpg");
+        height: 500px;
+        /*  parallax scrolling effect */
+        background-attachment: scroll;
+        background-position: 50%;
+        background-size: contain;
+    }
+}

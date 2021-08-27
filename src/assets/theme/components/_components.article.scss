@@ -1,3 +1,13 @@
+// article
+//
+// Use this class to show articles.
+// Typically you'll want to use either a `<section>` or `<div>` element.
+//
+// Markup:
+// <section class="article"></section>
+//
+// Styleguide components.article
+
 .article {
     display: flex;
     flex-direction: row;
@@ -28,7 +38,7 @@
     &:hover{
         border-radius: 12px;
         * {
-            color: #d0021b;
+            color: var(--dribble);
         }
     }
 }
