@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../../assets/images/profile-image.jpeg';
+import profileImage from '../../assets/images/profile-image.jpg';
 
 function LandingPage () {
   return (
