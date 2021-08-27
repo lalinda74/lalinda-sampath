@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/lalinda-sampath/static/css/main.5a3de8d9.chunk.css",
-    "main.js": "/lalinda-sampath/static/js/main.9b69107b.chunk.js",
-    "main.js.map": "/lalinda-sampath/static/js/main.9b69107b.chunk.js.map",
-    "runtime-main.js": "/lalinda-sampath/static/js/runtime-main.832bbbc1.js",
-    "runtime-main.js.map": "/lalinda-sampath/static/js/runtime-main.832bbbc1.js.map",
+    "main.css": "/lalinda-sampath/static/css/main.e48551c7.chunk.css",
+    "main.js": "/lalinda-sampath/static/js/main.586de162.chunk.js",
+    "main.js.map": "/lalinda-sampath/static/js/main.586de162.chunk.js.map",
+    "runtime-main.js": "/lalinda-sampath/static/js/runtime-main.aae8be8e.js",
+    "runtime-main.js.map": "/lalinda-sampath/static/js/runtime-main.aae8be8e.js.map",
     "static/js/2.42cdf1bd.chunk.js": "/lalinda-sampath/static/js/2.42cdf1bd.chunk.js",
     "static/js/2.42cdf1bd.chunk.js.map": "/lalinda-sampath/static/js/2.42cdf1bd.chunk.js.map",
-    "static/js/3.8c7e590f.chunk.js": "/lalinda-sampath/static/js/3.8c7e590f.chunk.js",
-    "static/js/3.8c7e590f.chunk.js.map": "/lalinda-sampath/static/js/3.8c7e590f.chunk.js.map",
+    "static/js/3.653a3c07.chunk.js": "/lalinda-sampath/static/js/3.653a3c07.chunk.js",
+    "static/js/3.653a3c07.chunk.js.map": "/lalinda-sampath/static/js/3.653a3c07.chunk.js.map",
     "static/js/4.c9d996bd.chunk.js": "/lalinda-sampath/static/js/4.c9d996bd.chunk.js",
     "static/js/4.c9d996bd.chunk.js.map": "/lalinda-sampath/static/js/4.c9d996bd.chunk.js.map",
-    "static/js/5.fbc5fd24.chunk.js": "/lalinda-sampath/static/js/5.fbc5fd24.chunk.js",
-    "static/js/5.fbc5fd24.chunk.js.map": "/lalinda-sampath/static/js/5.fbc5fd24.chunk.js.map",
+    "static/js/5.b033a680.chunk.js": "/lalinda-sampath/static/js/5.b033a680.chunk.js",
+    "static/js/5.b033a680.chunk.js.map": "/lalinda-sampath/static/js/5.b033a680.chunk.js.map",
     "static/js/6.5cee7c96.chunk.js": "/lalinda-sampath/static/js/6.5cee7c96.chunk.js",
     "static/js/6.5cee7c96.chunk.js.map": "/lalinda-sampath/static/js/6.5cee7c96.chunk.js.map",
     "static/js/7.9181a268.chunk.js": "/lalinda-sampath/static/js/7.9181a268.chunk.js",
@@ -20,7 +20,7 @@
     "static/js/8.b9680efa.chunk.js": "/lalinda-sampath/static/js/8.b9680efa.chunk.js",
     "static/js/8.b9680efa.chunk.js.map": "/lalinda-sampath/static/js/8.b9680efa.chunk.js.map",
     "index.html": "/lalinda-sampath/index.html",
-    "static/css/main.5a3de8d9.chunk.css.map": "/lalinda-sampath/static/css/main.5a3de8d9.chunk.css.map",
+    "static/css/main.e48551c7.chunk.css.map": "/lalinda-sampath/static/css/main.e48551c7.chunk.css.map",
     "static/js/2.42cdf1bd.chunk.js.LICENSE.txt": "/lalinda-sampath/static/js/2.42cdf1bd.chunk.js.LICENSE.txt",
     "static/media/article2.4cc12e38.png": "/lalinda-sampath/static/media/article2.4cc12e38.png",
     "static/media/App.scss": "/lalinda-sampath/static/media/bg.45394d2a.jpeg",
@@ -28,12 +28,12 @@
     "static/media/poster1-2x.fd9f7002.png": "/lalinda-sampath/static/media/poster1-2x.fd9f7002.png",
     "static/media/poster2-1x.86b9612d.png": "/lalinda-sampath/static/media/poster2-1x.86b9612d.png",
     "static/media/poster2-2x.39913985.png": "/lalinda-sampath/static/media/poster2-2x.39913985.png",
-    "static/media/profile-image.ecbd95f3.jpeg": "/lalinda-sampath/static/media/profile-image.ecbd95f3.jpeg"
+    "static/media/profile-image.1a347427.jpg": "/lalinda-sampath/static/media/profile-image.1a347427.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.832bbbc1.js",
+    "static/js/runtime-main.aae8be8e.js",
     "static/js/2.42cdf1bd.chunk.js",
-    "static/css/main.5a3de8d9.chunk.css",
-    "static/js/main.9b69107b.chunk.js"
+    "static/css/main.e48551c7.chunk.css",
+    "static/js/main.586de162.chunk.js"
   ]
 }
