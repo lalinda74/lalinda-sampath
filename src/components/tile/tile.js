@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 function Tile (props) {
   return (
-    <section className="tile">
-      <div className="p-subtitle">{props.company}</div>
+    <section className="p-tile">
+      <h4 className="p-tile__header">{props.company}</h4>
       <p className="p-txt-md">{props.position}</p>
       <label className="p-txt-label">{props.duration}</label>
     </section>

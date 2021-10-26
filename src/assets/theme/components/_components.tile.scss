@@ -1,0 +1,15 @@
+// tile
+//
+// Use this class to show tile components.
+// Typically you'll want to use either a `<section>` or `<div>` element.
+//
+// Markup:
+// <section class="p-tile"></section>
+//
+// Styleguide components.tile
+
+.p-tile {
+    &__header {
+        margin-bottom: 0.35rem;
+    }
+}

@@ -25,16 +25,30 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .p-banner {
         width: 80vw;
         min-width: unset;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
+@media (min-width: 768px) and (max-width: 1100px) {
+    .p-banner {
+        width: 48vw;
+        min-width: unset;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) and (orientation: portrait) {
     .p-banner {
         min-width: unset;
         height: 45vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+    .p-banner {
+        width: 60vw;
+        min-width: unset;
     }
 }

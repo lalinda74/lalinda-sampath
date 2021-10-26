@@ -5,7 +5,7 @@ function Article (props) {
   return (
     <a className="article" aria-label="article" href={props.src} target="_blank" rel="noreferrer">
       <div>
-        <p className="article__title">{props.title}</p>
+        <h4>{props.title}</h4>
         <p className="p-txt-md article__desc">{props.desc}</p>
         <label className="p-txt-label">Read the whole story</label>
       </div>

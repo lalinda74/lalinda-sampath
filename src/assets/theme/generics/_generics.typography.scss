@@ -26,7 +26,7 @@ h6 {
     color: var(--secondary-txt-color);
 }
 
-div.p-subtitle {
+h4 {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--primary-txt-color);
@@ -94,14 +94,7 @@ label.p-label-emp {
 }
 
 @media (max-width: var(--medium)) {
-    h3.p-subtitle {
-        font-size: 20px;
-        line-height: 27px;
-    }
-}
-
-@media (max-width: var(--medium)) {
-    div.p-subtitle {
+    h4 {
         font-size: 1rem;
     }
 }

@@ -1,71 +1,54 @@
 import React from 'react';
-import PosterOne1x from '../../assets/images/poster1-1x.png';
-import PosterOne2x from '../../assets/images/poster1-2x.png';
-import PosterTwo1x from '../../assets/images/poster2-1x.png';
-import PosterTwo2x from '../../assets/images/poster2-2x.png';
+import PropTypes from 'prop-types';
+import withTransitions from '../../HOCs/withTransitions';
+import { ProjectsConfig } from '../../configs/Projects.config';
 
-function useOnScreen (options) {
-  const [ref, setRef] = React.useState(null);
-  const [visible, setVisible] = React.useState(false);
+function Projects (props) {
+  const setRef = props.transition;
+  const visible = props.visible;
 
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (visible === false) {
-        setVisible(entry.isIntersecting);
-      }
-    }, options);
+  const ProjectsList = ProjectsConfig;
 
-    if (ref) {
-      observer.observe(ref);
-    }
-
-    return () => {
-      if (ref) {
-        observer.unobserve(ref);
-      }
-    };
-  }, [ref, options, visible]);
-
-  return [setRef, visible];
-}
-
-function Projects () {
-  const [setRef, visible] = useOnScreen({ threshold: '0.2' });
+  const showProjects = (projects) => {
+    return projects.map((project, i) => (
+      <section className="p-banner" key={i}>
+        <a
+          href={project.link}
+          aria-label={project.title}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <picture>
+            <source srcSet={project.srcSet1} media="(max-width: 768px)" />
+            <source srcSet={project.srcSet2} media="(min-width: 768px)" />
+            <img
+              src={project.srcSet2}
+              className={`${
+                visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'
+              }`}
+              loading="lazy"
+              alt="banner 1"
+            />
+          </picture>
+        </a>
+      </section>
+    ));
+  };
 
   return (
-    <section id = "projects" ref={setRef}>
-      <div>
-        <div className="text-wrapper">
-          <h6>some work I have done</h6>
-          <h2 className="mb-3 p-title">Case Studies</h2>
-        </div>
-        <div className="p-slider">
-          <div className="p-banner">
-            <a href = "https://www.behance.net/gallery/121582261/Camp-Search-mobile-app" aria-label="Project Camp" target="_blank" rel="noopener noreferrer">
-              <picture>
-                <source srcSet={`${PosterOne1x}`} media="(max-width: 768px)" />
-                <source srcSet={`${PosterOne2x}`} media="(min-width: 768px)" />
-                <img src= {PosterOne2x} className={`${visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'}`} loading = "lazy" alt = "banner 1" />
-              </picture>
-            </a>
-          </div>
-          <div className="p-banner">
-            <a href = "https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary" aria-label="Project Travel" target="_blank" rel="noopener noreferrer">
-              <picture>
-                {/* <source srcset={`${PosterTwo2x}`} media="(max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi)" /> */}
-                <source srcSet={`${PosterTwo1x}`} media="(max-width: 768px)" />
-                <source srcSet={`${PosterTwo2x}`} media="(min-width: 768px)" />
-               <img src= {PosterTwo1x} className={`${visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'}`} loading = "lazy" alt = "banner 2" />
-              </picture>
-            </a>
-          </div>
-          {/* <div className="p-banner">
-            <img src= {Poster3} srcSet={`${Poster3} 1x, ${Poster3} 2x`} alt = "banner 3" />
-          </div> */}
-        </div>
+    <section id="projects" ref={setRef}>
+      <div className="text-wrapper">
+        <h6>some work I have done</h6>
+        <h2 className="mb-3 p-title">Case Studies</h2>
       </div>
+      <div className="p-slider">{ showProjects(ProjectsList) }</div>
     </section>
   );
 }
 
-export default Projects;
+Projects.propTypes = {
+  transition: PropTypes.func,
+  visible: PropTypes.bool
+};
+
+export default withTransitions(Projects);

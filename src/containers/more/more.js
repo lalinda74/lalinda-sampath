@@ -2,8 +2,7 @@ import React from 'react';
 
 function More () {
   return (
-    <section>
-      <div className="wrapper wrapper--slim">
+    <section className="wrapper wrapper--slim" id="moreSection">
         <h6>BUT WAIT - </h6>
         <h2 className="mb-3 p-title">There{"'"}s more</h2>
         <p className="p-txt-md mt-3">Other than my passion towards tech and design, I have strong interests in fitness, travel.
@@ -23,7 +22,6 @@ function More () {
         and fitness.</p>
         <br />
         <p className="mb-3 p-txt-md">Nice to meet you. <span role="img" aria-label="Hi">👋</span></p>
-      </div>
     </section>
   );
 }
