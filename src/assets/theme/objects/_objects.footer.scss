@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: 60% 40%;
     align-items: center;
+    &__contacts {
+        margin-top: -32px;
+    }
+    &__email-addr {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {

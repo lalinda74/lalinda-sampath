@@ -12,7 +12,7 @@
         opacity: 0.66;
     }
     &--medium {
-        color: var(--medium);
+        color: var(--medium-blog);
         &:hover {
             cursor: pointer;
             color: var(--dribble) !important;
@@ -30,7 +30,7 @@
         color: var(--dribble);
         &:hover {
             cursor: pointer;
-            color: var(--medium) !important;
+            color: var(--medium-blog) !important;
             text-decoration: none;
             &::after {
                 opacity: 1;

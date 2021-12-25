@@ -4,21 +4,21 @@
 // Typically you'll want to use either a `<span>` or `<div>` element.
 //
 // Markup:
-// <span class="wrapper"></span>
+// <span class="p-profile-image"></span>
 //
 // Styleguide objects.profile-image
 
-.profile-image {
+.p-profile-image {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     img {
         width: 200px;
         height: 200px;
     }
 }
 
-@media (max-width: 767px) {
-    .profile-image {
+@media (max-width: 768px) {
+    .p-profile-image {
         display: none;
     }
 }

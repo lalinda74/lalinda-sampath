@@ -5,26 +5,26 @@
 // Styleguide generics.animations
 
 // slide down animation
-@keyframes slide-down {
+@keyframes slide-up {
     from {
       opacity: 0;
-      transform: translateY(-50px);
+      transform: translateY(50px);
     }
     to {
       opacity: 1;
-      transform: none;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     }
 }
 
-.p-slidedown {
-  animation: slide-down 1s forwards;
+.p-slideup {
+  animation: slide-up 3s forwards;
 }
 
 // zoom out animation
 @keyframes zoom-out {
   0% {
     opacity: 0.6;
-    transform: scale(1.2, 1.2);
+    transform: scale(0.8, 0.8);
   }
   100% {
     opacity: 1;
@@ -38,6 +38,6 @@
       transform: scale(1.2, 1.2);
   }
   &__animation {
-      animation: zoom-out 2s ease-out;
+      animation: zoom-out 0.7s ease-out;
   }
 }

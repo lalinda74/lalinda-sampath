@@ -1,0 +1,19 @@
+// landing page
+//
+// Styleguide components.landing-page
+
+
+@media (max-width: 768px) {
+    #landingPage {
+        grid-template-columns: unset;
+        text-align: center;
+        height: 90vh;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+}

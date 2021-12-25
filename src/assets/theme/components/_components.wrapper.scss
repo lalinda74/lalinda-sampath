@@ -15,10 +15,9 @@
 }
 
 .wrapper {
-    grid-gap: 16px;
     padding: 24px;
     align-items: center;
-    animation: slide-down 1s forwards;
+    animation: slide-up 1s forwards;
     &--col-1 {
         display: grid;
         grid-template-columns: 100%;
@@ -57,10 +56,4 @@
 .text-wrapper {
     max-width: 1024px;
     margin: 40px auto;
-    padding: 0 15px;
-}
-@media (max-width: 1119px) {
-    .text-wrapper {
-        padding: 0 32px;
-    }
 }
