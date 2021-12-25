@@ -1,14 +1,12 @@
 import React from 'react';
+import SectionHeader from '../../components/section-header/section-header';
 
 function Footer () {
   return (
     <footer className="wrapper wrapper--slim p-footer">
-      <div>
-        <h6>Don{"'"}t be a stranger</h6>
-        <h2 className="p-title">Let{"'"}s Connect</h2>
-      </div>
-      <div>
-        <h4 className="mb-1">diaslalinda@gmail.com</h4>
+      <SectionHeader secondaryTxt="Don't be a stranger" primaryTxt="Let's Connect"></SectionHeader>
+      <div className="p-footer__contacts">
+        <h4 className="p-footer__email-addr mb-2">diaslalinda@gmail.com</h4>
         <ul className="p-row">
           <li>
             <a className="p-link p-link--small p-link--plain p-link--medium" aria-label="Dribble" href="https://dribbble.com/lalinda" target="_blank" rel="noopener noreferrer">Dribble</a>

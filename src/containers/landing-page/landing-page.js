@@ -15,10 +15,10 @@ function LandingPage () {
           </div>
         </a>
       </span>
-      <aside className="profile-image">
+      <aside className="p-profile-image">
         <picture>
           <source media="(min-width: 800px)" data-srcset={profileImage} type="image/webp" srcSet={profileImage} />
-          <img src={profileImage} loading="lazy" alt="profile" className="profile-image" />
+          <img src={profileImage} loading="lazy" alt="profile" className="p-profile-image" />
         </picture>
       </aside>
     </section>

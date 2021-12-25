@@ -2,18 +2,4 @@
     display: grid;
     grid-template-columns: auto;
     grid-gap: 24px;
-    max-width: 1024px;
-    margin: auto;
-    padding: 0 15px;
-    overflow-x: auto;
-}
-@media (max-width: 768px) {
-    .p-slider {
-        // grid-template-columns: auto auto auto auto;
-    }
-}
-@media (max-width: 1119px) {
-    .p-slider {
-        padding: 0 32px;
-    }
 }

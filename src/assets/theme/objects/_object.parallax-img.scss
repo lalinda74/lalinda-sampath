@@ -20,7 +20,7 @@
     .p-parallax-img {
         background-image: url("../../images/bg.jpeg");
         /*  parallax scrolling effect */
-        background-attachment: fixed;
+        background-attachment: unset;
         background-position: center;
         background-size: cover;
     }

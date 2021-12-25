@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withTransitions from '../../HOCs/withTransitions';
+import SectionHeader from '../../components/section-header/section-header';
 import { ArticlesConfig } from '../../configs/Articles.config';
 import Article from '../../components/article/article';
 
@@ -11,8 +12,8 @@ function Stories (props) {
 
   const showArticles = (articles) => {
     const listItems = articles.map((item, i) =>
-            <li key={i}>
-                <Article {...item} />
+            <li key={i} className={`${visible ? 'p-slideup' : ''}`}>
+                <Article {...item}/>
             </li>
     );
     return (
@@ -24,11 +25,8 @@ function Stories (props) {
         <section className="wrapper" ref={setRef}>
             <div className={`p-parallax-img ${visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'}`}></div>
             <div className="content wrapper--slim">
-                <div className="content__inner-wrapper">
-                    <h6>I SHARE</h6>
-                    <h2 className="mb-2 p-title">Stories and Learnings</h2>
-                </div>
-                { showArticles(articlesList) }
+              <SectionHeader secondaryTxt="I SHARE" primaryTxt="Stories and Learnings"></SectionHeader>
+              { showArticles(articlesList) }
             </div>
         </section>
   );

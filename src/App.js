@@ -13,7 +13,7 @@ function App () {
   return (
     <div className="parent-wrapper">
       <LandingPage />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <Projects />
         <Experience />
         <Stories />

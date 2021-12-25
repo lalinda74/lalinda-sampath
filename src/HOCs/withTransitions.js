@@ -7,7 +7,6 @@ function withTransitions (WrappedComponent, options) {
 
     React.useEffect(() => {
       const observer = new IntersectionObserver(([entry]) => {
-        console.log('true');
         if (visible === false) {
           setVisible(entry.isIntersecting);
         }

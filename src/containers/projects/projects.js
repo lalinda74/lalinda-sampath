@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withTransitions from '../../HOCs/withTransitions';
+import SectionHeader from '../../components/section-header/section-header';
 import { ProjectsConfig } from '../../configs/Projects.config';
 import NextImage from '../../assets/images/view.svg';
 
@@ -12,22 +13,19 @@ function Projects (props) {
 
   const showProjects = (projects) => {
     return projects.map((project, i) => (
-      <section className="p-banner mb-3" key={i}>
+      <article key={i} className={`p-banner mb-3 ${
+        visible ? 'p-slideup' : ''
+      }`}>
         <a
           href={project.link}
           aria-label={project.title}
           target="_blank"
           rel="noopener noreferrer"
         >
-            {/* <source srcSet={project.srcSet1} media="(max-width: 768px)" />
-            <source srcSet={project.srcSet2} media="(min-width: 768px)" /> */}
             <img
+              srcSet={`${project.srcSet1} 622w, ${project.srcSet2} 962w`}
+              sizes="(min-width: 768px) 481px, 311px"
               src={project.srcSet2}
-              srcSet={`${project.srcSet1} 311w, ${project.srcSet2} 481w`}
-              sizes="(min-width: 768px) 500px, 311px"
-              className={`${
-                visible ? 'p-zoom-out__animation' : 'p-zoom-out__initial'
-              }`}
               loading="lazy"
               alt="banner 1"
             />
@@ -55,7 +53,7 @@ function Projects (props) {
             </div>
           </section>
         </aside>
-      </section>
+      </article>
     ));
   };
 
@@ -66,11 +64,8 @@ function Projects (props) {
   };
 
   return (
-    <section id="projects" ref={setRef}>
-      <div className="text-wrapper">
-        <h6>some work I have done</h6>
-        <h2 className="mb-3 p-title">Case Studies</h2>
-      </div>
+    <section id="projects" className="wrapper wrapper--slim" ref={setRef}>
+      <SectionHeader secondaryTxt="Some work I have done" primaryTxt="Case Studies"></SectionHeader>
       <div className="p-slider">{ showProjects(ProjectsList) }</div>
     </section>
   );

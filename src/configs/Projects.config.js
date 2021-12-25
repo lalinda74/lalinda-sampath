@@ -1,31 +1,32 @@
 import PosterOne311 from '../assets/images/banner1-311.jpg';
 import PosterOne481 from '../assets/images/banner1-481.jpg';
-// import PosterOne2x from '../assets/images/poster1-2x.png';
-import PosterTwo1x from '../assets/images/poster2-1x.png';
-import PosterTwo2x from '../assets/images/poster2-2x.png';
+import PosterTwo311 from '../assets/images/banner2-311.jpg';
+import PosterTwo481 from '../assets/images/banner2-481.jpg';
 
 export const ProjectsConfig = [
   {
     title: 'RouteSONAR',
-    link: 'https://www.behance.net/gallery/121582261/Camp-Search-mobile-app',
+    link: 'https://www.behance.net/gallery/131223179/RouteSONAR-Route-Optimization-Web-Application',
     srcSet1: PosterOne311,
     srcSet2: PosterOne481,
     desc: 'RouteSONAR is an innovative route optimization platform developed to find the most efficient travel route out of all possible outcomes mapped across the multiple last mile delivery locations.',
     roles: [
-      { name: 'Lo-fi & Hi-fi prototyping 123' },
-      { name: 'UI/UX Lead' }
+      { name: 'Lo-fi & Hi-fi prototyping' },
+      { name: 'UI/UX Lead' },
+      { name: 'FE Development' }
     ],
     tools: [
       { name: 'Figma' },
-      { name: 'Protopie' }
+      { name: 'Protopie' },
+      { name: 'React JS' }
     ]
   },
   {
-    title: 'Project Travel',
-    link: 'https://www.behance.net/gallery/75218035/B2B-Travel-Itinerary',
-    srcSet1: PosterTwo1x,
-    srcSet2: PosterTwo2x,
-    desc: 'This is a business transformation platform that focuses on creating unique touch points at all levels of the customer booking journey',
+    title: 'CampMo',
+    link: 'https://www.behance.net/gallery/121582261/Camp-Search-mobile-app',
+    srcSet1: PosterTwo311,
+    srcSet2: PosterTwo481,
+    desc: 'The platform that allows travellers to find their ideal campgrounds for their holidays and get recommendations based on their preferences.',
     roles: [
       { name: 'Lo-fi & Hi-fi prototyping' },
       { name: 'UI/UX Lead' }
